@@ -1,8 +1,14 @@
 {
   "version": 2,
   "functions": {
-    "api/*.py": {
-      "runtime": "@vercel/python3.10"
+    "api/get-skills.py": {
+      "runtime": "python3.9"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/get-skills",
+      "dest": "api/get-skills.py"
+    }
+  ]
 }
